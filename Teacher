@@ -1,0 +1,13 @@
+public class Teacher {
+    private Student[] students;
+
+    public Teacher(Student student1, Student student2, Student student3) {
+        students = new Student[]{student1, student2, student3};
+    }
+
+    public void printInfoAboutStudents() {
+        for (Student s : students) {
+            s.printInfo();
+        }
+    }
+}
